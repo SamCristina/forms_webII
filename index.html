@@ -20,11 +20,11 @@
       </header>
       <form action="#" method="post" class="form">
         <div class="form-group">
-          <label for="nome">Aniversário:</label>
+          <label for="nome">nome:</label>
           <input type="text" id="nome" name="nome" required />
         </div>
         <div class="form-group">
-          <label for="telefone">Usuário:</label>
+          <label for="telefone">telefone:</label>
           <input type="tel" id="telefone" name="telefone" required />
         </div>
         <div class="form-group">
@@ -67,12 +67,19 @@
 
         try {
           // Faz uma requisição para a sua API
-          await fetch("INSIRA O LINK DA SUA API AQUI", {
+          await fetch("https://meuprojeto-k5c5.onrender.com/formulario", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
             body: JSON.stringify(dados),
+
+          }).then((response) => {
+            if(response.ok){
+              alert("Formulário enviado com sucesso!");
+            }else{
+              alert("Erro ao enviar formulário!");
+            }
           });
         } catch (error) {
           console.log(error);
