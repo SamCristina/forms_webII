@@ -12,6 +12,7 @@ body {
 }
 
 .container {
+  min-width: 500px;
   max-width: 600px;
   margin: 50px 20px;
   padding: 40px 40px;
@@ -100,4 +101,79 @@ input:focus{
 
 .btn:hover {
   background-color: #5dd685; /* tom mais escuro de roxo */
+}
+/* Estilização da tabela */
+.container {
+  margin: 50px 20px;
+  padding: 40px 40px;
+  background-color: #5a5a5a; /* branco */
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(51, 0, 67, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #575757;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-tabela {
+  max-width: 100%;
+  min-width: 700px;
+  background-color: #504c4c;
+  border-radius: 8px;
+  border: 1px solid #5e5b5b;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: rgba(51, 0, 67, 0.2);
+}
+tr:nth-child(even) {
+  background-color: #636363;
+}
+
+.tabela-vazia span {
+  display: block;
+  text-align: center;
+  width: 100%;
+  font-weight: 600;
+  margin: 0 auto;
+  font-size: 18px;
+  color: #727272;
+}
+
+.btn-excluir {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-excluir:hover {
+  background-color: #d32f2f;
+}
+.buttons {
+  align-items: end;
+  a {
+    text-decoration: none;
+  }
 }
